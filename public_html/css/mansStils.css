@@ -1,0 +1,19 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Feb 6, 2026, 2:25:51 PM
+    Author     : tdraska
+*/
+
+body {
+    background-color: #448800;
+    background-image: url('../images/zemenes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    -webkit-text-stroke: 1px black;
+    font-size: 50px;
+}
