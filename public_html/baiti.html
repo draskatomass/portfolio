@@ -10,7 +10,7 @@
           let dz = document.getElementsByName('tas');
           for (i = 0; i < dz.length; i++) {
             if (dz[i].checked)
-              document.getElementById("atbilde").innerHTML = Number(dz[i].value)*Number(document.getElementsById('sekundes').value);
+              document.getElementById("atbilde").innerHTML = dz[i].value*Number(document.getElementById('sekundes').value);
           }
         }   
       </script>
@@ -20,10 +20,10 @@
         </p>
     </form>
     <form>
-            <input id="atbilde">
-              <input type="radio" id="KiB" name="tas" onclick="maksa()" value="3052">
+            <p id="atbilde"></p>
+              <input type="radio" id="KiB" name="tas" onclick="maksa()" value="24414.0625">
               <label for="KiB">KiB</label>
-              <input type="radio" id="KB" name="tas" onclick="maksa()" value="3125">
+              <input type="radio" id="KB" name="tas" onclick="maksa()" value="25000">
               <label for="KB">KB</label>
     </form>
 </body>
