@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Baiti</title>
+</head>
+<body>
+    <script>
+        function maksa() {
+          let dz = document.getElementsByName('tas');
+          for (i = 0; i < dz.length; i++) {
+            if (dz[i].checked)
+              document.getElementById("atbilde").innerHTML = Number(dz[i].value)*Number(document.getElementsById('sekundes').value);
+          }
+        }   
+      </script>
+    <form>
+        <p>Aprēķināt cik daudz informācijas var lejuplādēt <br><input id="sekundes"> sekundēs, ja interneta ātrums ir 25 Mbps.</p>
+        <p>Atbilde
+        </p>
+    </form>
+    <form>
+            <input id="atbilde">
+              <input type="radio" id="KiB" name="tas" onclick="maksa()" value="3052">
+              <label for="KiB">KiB</label>
+              <input type="radio" id="KB" name="tas" onclick="maksa()" value="3125">
+              <label for="KB">KB</label>
+    </form>
+</body>
+</html>
